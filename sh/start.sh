@@ -25,6 +25,9 @@ prop_replace 'nifi.web.http.host'               "${hostname}"
 prop_replace 'nifi.remote.input.host'           "${hostname}"
 prop_replace 'nifi.remote.input.socket.port'    '10000'
 prop_replace 'nifi.remote.input.secure'         'false'
+prop_replace 'nifi.remote.input.secure'         ''
+prop_replace 'nifi.flow.configuration.file'      './conf_persistent/flow.xml.gz'
+prop_replace 'nifi.flow.configuration.archive.dir' './conf_persistent/archive/'
 
 # Check if we are secured or unsecured
 case ${AUTH} in
